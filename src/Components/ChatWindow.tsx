@@ -37,7 +37,7 @@ const ChatBubbleComponent: React.FC = () => {
     try {
       const { OpenAI } = await import('openai'); // Dynamic import
       const openai = new OpenAI({
-        organization: "org-vWOo6RiYt9CnmypCNWvUUPr3",
+        organization: /* replace with organization id */,
         apiKey: /* replace with own api key */,
         dangerouslyAllowBrowser: true
       });
