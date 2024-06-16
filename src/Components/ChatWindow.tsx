@@ -39,7 +39,6 @@ const ChatBubbleComponent: React.FC = () => {
       const openai = new OpenAI({
         organization: /* replace with organization id */,
         apiKey: /* replace with own api key */,
-        dangerouslyAllowBrowser: true
       });
 
       const completion = await openai.chat.completions.create({
