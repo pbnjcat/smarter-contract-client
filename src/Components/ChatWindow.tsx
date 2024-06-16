@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import {
   MainContainer,
@@ -39,7 +38,7 @@ const ChatBubbleComponent: React.FC = () => {
       const { OpenAI } = await import('openai'); // Dynamic import
       const openai = new OpenAI({
         organization: "org-vWOo6RiYt9CnmypCNWvUUPr3",
-        apiKey: "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",
+        apiKey: /* replace with own api key */,
         dangerouslyAllowBrowser: true
       });
 
@@ -62,6 +61,7 @@ const ChatBubbleComponent: React.FC = () => {
       console.error('Error:', error);
     }
   };
+
 
   return (
     <div>
@@ -120,7 +120,7 @@ const ChatBubbleComponent: React.FC = () => {
           }
         `}
       </style>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '55vh', position: 'relative' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh', position: 'relative', marginTop:"50px" }}>
         <div style={{ width: '500px', height: '600px', marginLeft: '-50px' }}>
           <MainContainer>
             <ChatContainer>
@@ -195,7 +195,7 @@ const ChatBubbleComponent: React.FC = () => {
 
 
           </MainContainer>
-        </div>
+        </div> 
 
 
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px', marginLeft: '20px' }}>

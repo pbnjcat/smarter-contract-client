@@ -42,9 +42,6 @@ export default function Header() {
           <Text size="lg" fw={500} style={{ fontFamily: 'Poppins, sans-serif' }}>
             Smarter Contract
           </Text>
-          <Box className={styled.button_grp}>
-            
-          </Box>
           <Group visibleFrom="xs">
             <Button onClick={connectWallet}>
               {account ? `Connected: ${account.slice(0, 6)}...${account.slice(-4)}` : 'Connect Wallet'}
